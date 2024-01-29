@@ -1,6 +1,6 @@
 {
     "$schema": "http://json.schemastore.org/template",
-    "identity": "ThomasLevesque.Templates.OSSLibraryTemplate",
+    "identity": "ThomasLevesque.Templates.OSSLibrary",
     "name": "OSS Class Library",
     "description": "A template for a .NET class library with build script, GitHub Actions workflows for build and release, etc.",
     "shortName": "osslib",
