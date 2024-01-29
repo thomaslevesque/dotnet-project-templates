@@ -10,10 +10,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: Run build script
+    - name: Build package
       run: |
         mkdir -p artifacts/packages
-        dotnet pack -o artifacts
+        dotnet pack -o artifacts/packages
     - name: Upload packages
       uses: actions/upload-artifact@v4
       with:
