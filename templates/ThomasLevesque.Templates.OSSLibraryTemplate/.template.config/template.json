@@ -12,23 +12,5 @@
     },
     "sourceName": "LibraryTemplate",
     "preferNameDirectory": true,
-    "defaultName": "MyLibrary",
-    "sources": [
-        {
-            "source": "./",
-            "target": "./",
-            "exclude": [
-                "**/.git/**",
-                "**/.vs/**",
-                "**/.idea/**",
-                "**/.vscode/**",
-                "**/[Bb]in/**",
-                "**/[Oo]bj/**",
-                ".template.config/**/*",
-                "**/*.filelist",
-                "**/*.user",
-                "**/*.lock.json"
-            ]
-        }
-    ]
+    "defaultName": "MyLibrary"
 }
