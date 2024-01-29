@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "identity": "ThomasLevesque.Templates.OSSLibraryTemplate",
+    "name": "OSS Class Library",
+    "description": "A template for a .NET class library with build script, GitHub Actions workflows for build and release, etc.",
+    "shortName": "osslib",
+    "author": "Thomas Levesque",
+    "classifications": [ "Library", "OSS", "GitHub" ],
+    "tags": {
+        "language": "C#",
+        "type": "solution"
+    },
+    "sourceName": "LibraryTemplate",
+    "preferNameDirectory": true,
+    "defaultName": "MyLibrary",
+    "sources": [
+        {
+            "source": "./",
+            "target": "./",
+            "exclude": [
+                "**/.git/**",
+                "**/.vs/**",
+                "**/.idea/**",
+                "**/.vscode/**",
+                "**/[Bb]in/**",
+                "**/[Oo]bj/**",
+                ".template.config/**/*",
+                "**/*.filelist",
+                "**/*.user",
+                "**/*.lock.json"
+            ]
+        }
+    ]
+}

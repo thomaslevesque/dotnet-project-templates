@@ -1,5 +1,5 @@
 # LibraryTemplate
 
-A template for a class library with build script, GitHub Actions workflows for build and release, etc.
+TODO: add description
 
-Note that for NuGet package publishing to work, you need to set the NUGET_API_KEY secret in your GitHub repository.
+TODO: for NuGet package publishing to work, set the NUGET_API_KEY secret in the GitHub repository
