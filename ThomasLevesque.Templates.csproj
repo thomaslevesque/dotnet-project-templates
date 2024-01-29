@@ -2,21 +2,33 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0</PackageVersion>
     <PackageId>ThomasLevesque.Templates</PackageId>
     <Title>Thomas Levesque's project templates</Title>
     <Authors>Thomas Levesque</Authors>
     <Description>Project templates for my personal use. Probably only useful to me, but feel free to use if you want.</Description>
     <PackageTags>dotnet-new;templates</PackageTags>
+    <PackageProjectUrl>https://github.com/thomaslevesque/dotnet-project-templates</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>https://github.com/thomaslevesque/dotnet-project-templates/releases</PackageReleaseNotes>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
     <TargetFramework>netstandard2.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <NoWarn>NU5110;NU5111;NU5128</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\artifacts\**" />
     <Compile Remove="**\*" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="4.3.0" PrivateAssets="all" />
   </ItemGroup>
 
 </Project>
