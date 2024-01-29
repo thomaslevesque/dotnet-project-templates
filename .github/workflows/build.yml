@@ -1,0 +1,21 @@
+name: Build
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_call:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Run build script
+      run: |
+        mkdir -p artifacts/packages
+        dotnet pack -o artifacts
+    - name: Upload packages
+      uses: actions/upload-artifact@v4
+      with:
+        name: packages
+        path: artifacts/packages/*.nupkg
